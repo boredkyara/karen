@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592834651968.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1998176B",
+    "lastKnownWriteTime" : 1592846460,
+    "last_content_update" : 1592846460572,
+    "path" : "~/PycharmProjects/karen/scraper.R",
+    "project_path" : "scraper.R",
+    "properties" : {
+        "cursorPosition" : "48,52",
+        "scrollLine" : "46",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
