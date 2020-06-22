@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
 
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+
 <head>
     <link rel="stylesheet" href="main.css">
     <!-- <link rel="stylesheet" href="scrollytelling.css"> -->
@@ -64,76 +70,43 @@
                         bob die vraagt ​​om met de manager te praten.</a> Maar in Nederland kennen we al sinds 2016 een identieke fenomeen, oftewel <a href="https://www.vice.com/nl/article/zmkgm8/vrouwen-met-een-kortpittig-kapsel-zijn-de-koninginnen-van-het-schijt-hebben">huisvrouwen met een kortpittig kapsel.</a>                        Terwijl de Amerikaanse Karen een naam heeft, is de Nederlandse equivalent naamloos gebleven. </p>
                     <p class="body-text" style="text-align: center;"><b>Maar hoe is de Amerikaanse Karen ontstaan?</b></p>
                     <p class="body-text">Om dit te beantwoorden kijken we naar de populariteit van <a href="https://www.ssa.gov/OACT/babynames/index.html" target="_blank">baby namen in de Verenigde Staten.</a> De naam Karen verscheen voor het eerst in de vrouwelijke Top 20
-                        in 1941 en bracht daar 30 jaar door totdat het in 1971 stopte. In de jaren negentig was de naam weer uit de Top 100 gevallen.</p>
+                        in 1941 en bracht daar 30 jaar door totdat het in 1971 stopte. In de jaren negentig was de naam weer uit de Top 100 gevallen. Je kent vast well niet veel baby's die Karen heten.</p>
                 </div>
+                <p class="chart1-labels">Percentage baby's met de naam Karen in de VS per jaar</p>
+
             </section>
+
         </div>
         <div class="container-full">
-            <div class="control">
-                <div class="songbox">
-                    <h4 class="band">Click a dot to</h4>
-                    <h4 class="song">hear an audio preview</h4>
-                </div>
-                <p class="chart1-labels"> <span style="color:#566fa3">Popularity&nbsp;&nbsp;</span>|<span style="color:#dbc269">&nbsp;&nbsp;Energy&nbsp;&nbsp;</span>|<span style="color:#c7493a">&nbsp;&nbsp;Danceability&nbsp;&nbsp;</span>|<span style="color:#5cdb95">&nbsp;&nbsp;Valence</span>                    </p>
-            </div>
-            <div id="beeswarm" class="center"></div>
+
+            <div id="my_dataviz" class="center" style="text-align: center;"></div>
+            <script src="karen.js"></script>
         </div>
-        <!-- <script src="beeswarm-chart.fca32fad.js"></script> -->
         <section id="4">
             <div class="container">
-                <h3 class="glitch-subhead" data-text="Slow Down, Speed Racer">Slow Down, Speed Racer</h3>
-                <p class="body-text">As decades have passed, the genre has increasingly lost its appeal, mostly because of Hip Hop and bubblegum pop's dominance in the 90's and 00's. Across each decade represented in the playlists, which date back to the predeccesors of the
-                    1960's, I grabbed the median artist followers and mean song energy to show how much the genre has changed.</p>
+                <h3 class="glitch-subhead">De Perfecte Match</h3>
+                <p class="body-text">Om de Nederlandse Karen te vinden vergelijken we de populariteit van Nederlandse baby namen met die van Karen in de Verenigde Staten. Om de beste match te vinden, hebben we de correlatie berekend tussen de populariteit van een Nederlandse
+                    naam in de tijd vergeleken met die van Karen. Een correlatie van 1 is een perfecte match. Aangezien we op zoek zijn naar namen die het meest op Karen lijken, richten we ons op namen die sterk bij elkaar passen, of op iets met een correlatie
+                    boven 0,7. Dus, hierbij introduceren we....</p>
             </div>
-            <div class="scrollytelling container-med">
-                <div class="chart" id="radial-chart"></div>
-                <div class="steps">
-                    <div class="step" id="decade-count-step">
-                        <h4 class="chart-head">New Artists, Few Followers</h4>
-                        <p class="body-text">Punk artists who released music in 2019 have, using the median, fewer than four times the number followers than artists who released songs in the 2010's, the second-least popular decade. </p>
-                        <p class="body-text"> So why is the decade represented so heavily? </p>
-                        <div id="followers-legend"></div>
-                    </div>
-                    <div class="step">
-                        <p class="body-text"> Ideally, cramming new and unpopular artists into these playlists would give them an amplification and help boost their following. </p>
-                        <p class="body-text">But it seems that it actually does more to erase the genre's history. The 90's were more than blink-182 and Green Day.</p>
-                    </div>
-                    <div class="step" id="decade-energy-step">
-                        <h4 class="chart-head">High Energy, Low Popularity</h4>
-                        <p class="body-text">The peak in the the average song popularity in the 80's was a result of not only Spotify cherry-picking fan-favorite songs but also the mainstream palatability of the tracks.</p>
-                        <div id="energy-legend"></div>
-                    </div>
-                    <div class="step">
-                        <p class="body-text">The songs are less hyper than the influx of 90's angst that flooded in the decade after but are more potently pissed than the chill vibes of the 70's.</p>
-                    </div>
-                    <div class="step">
-                        <p class="body-text">But it all came crashing down, except for a few break-out stars: Green Day, blink-182, My Chemical Romance. The genre dove back underground and didn't pick up its steam again.</p>
-                    </div>
-                    <div class="step">
-                        <p class="body-text">Now, with the inundation of new artists in the playlists, the median artist is less popular than any other decade, but they're more energetic.</p>
-                    </div>
-                </div>
-            </div>
+
         </section>
-        <!-- <script src="radial-chart.a777503e.js"></script> -->
-        <!-- <script src="scrollytelling.b6fcc127.js"></script> -->
-        <!-- <script src="followers-legend.9b47462c.js"></script> -->
-        <!-- <script src="energy-legend.9558e10f.js"></script> -->
+
+
         <section id="2">
             <div class="container">
-                <h3 class="glitch-subhead" data-text="Punk Is Actually Pop Punk">Punk Is Actually Pop Punk</h3>
+                <h3 class="glitch-subhead">De Nederlandse Karen</h3>
+                <h1 class="glitch-subhead">Marianne 0.87 correlatie</h1>
+
                 <p class="body-text">A breakdown of the genres associated with each song in the genre is even more telling. There are 424 different genres associated with the songs in the 24 playlists, which helps only to obscure the genre's definition.</p>
-                <div class="control">
-                    <button id="punk-button" class="graph">punk</button> <button id="rock-button" class="graph">rock</button> <button id="core-button" class="graph">-core</button> <button id="pop-button" class="graph">pop</button>
-                    <p class="genre-count"></p>
-                </div>
-                <figure id="waffle"></figure>
+
+                <h1 class="glitch-subhead">Yvonne 0.82 correlatie</h1>
                 <p class="body-text">Of these genres, only 54 contain the word 'punk'. The word 'rock' actually appears more often than 'punk' does when it comes to genre names. There are also 48 different combinations of 'core' genres, popularized by hardcore, metalcore
                     and numetalcore. There are also 32 flavors of 'pop'-classified genres floating around in the playlists, mostly due to pop punk and Brendon Urie's jump to bubblegum pop.</p>
             </div>
         </section>
-        <!-- <script src="div-chart.7f947b46.js"></script> -->
-        <!-- <script src="waffle-chart.b34e49b1.js"></script> -->
+
+
         <section id="#footer">
             <div class="container">
                 <h3 class="glitch-subhead">Methodologie</h3>

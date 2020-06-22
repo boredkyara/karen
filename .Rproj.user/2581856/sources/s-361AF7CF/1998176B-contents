@@ -57,8 +57,31 @@ for(i in 1:nr_names){
 
 cor_to_karen = cor_to_karen[order(cor_to_karen$cor, decreasing = TRUE),]
 
-
-test = df_female %>% filter(name=="Carolina")
-
-plot(data$year, data$normalized_count, type="l", col="red")
+test = df_female %>% filter(name=="Marianne")
+subs_karen = data %>% filter(year %in% test$y)
+plot(subs_karen$year, subs_karen$normalized_count, type="l", col="red")
 lines(test$y,test$normalized_count, type="l")
+
+marianne_results = data.frame(matrix(nrow=50, ncol=3))
+names(marianne_results) = c("marianne", "karen", "year")
+marianne_results$marianne = test$normalized_count
+marianne_results$karen = subs_karen$normalized_count
+marianne_results$year = test$y
+
+write.csv(marianne_results, "marianne.csv")
+
+test = df_female %>% filter(name=="Yvonne")
+subs_karen = data %>% filter(year %in% test$y)
+plot(subs_karen$year, subs_karen$normalized_count, type="l", col="red")
+lines(test$y,test$normalized_count, type="l")
+
+yvonne_results = data.frame(matrix(nrow=55, ncol=3))
+names(yvonne_results) = c("yvonne", "karen", "year")
+yvonne_results$yvonne = test$normalized_count
+yvonne_results$karen = subs_karen$normalized_count
+yvonne_results$year = test$y
+
+write.csv(yvonne_results, "yvonne.csv")
+
+
+
